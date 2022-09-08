@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: black;
+    padding: 10px 0;
+}
+.header img{
+    max-width: 150px;
+}
+.header ul{
+    margin: 0;
+}
+.header ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 56px;
+    padding-top: 21px;
+}
+.header ul li a {
+    display: block;
+    padding: 0px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.header ul li a:hover{
+    background-color: rgba(221, 221, 221, 0.67);
+    color: black;
+    border-radius: 5px;
+    transform: scale(1.02);
+}
+
+.header ul li ul {
+    background-color: rgb(27, 32, 32);
+    position: absolute;
+    top: 132%;
+    left: 0;
+    width: 200px;
+    padding: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.header ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.header ul li ul li{
+   padding: 0;
+   width: 100%;
+
+}
+.header ul li ul li a{
+display: block;
+border: 1px solid #ddd;
+}
+
+/* <!-- This is banner section  -->  */
+
+.banner{
+    padding: 200px 0;
+    background: url("./img/a0c6042d4612d7adf44692fffac7e082.jpg") no-repeat top;
+    background-size: cover;
+}
+
+.banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.banner h3 {
+    margin: 23px 0;
+}
+.banner a {
+    display: inline-block;
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 14px 28px;
+    font-size: 19px;
+    border-radius: 8px;
+    margin-left: 12px;
+    transition: .5s;
+    border: 1px solid black;
+}
+
+.banner .btn-1:hover{
+    background-color: wheat;
+    transform: scale(1.05);
+    color: black;
+}
+
+.banner .btn-2{
+    background-color: white;
+    color: black;
+    border: 1px solid #fff;
+}
+.banner .btn-2:hover{
+    background-color: black;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* <!-- This is about section  -->  */
+
+.about{
+    background-color: rgb(134, 162, 108);
+}
+.about h1{
+    border-bottom: 3px solid white;
+    display: inline-block;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 22px;
+    color: white;
+}
+.about img{
+    width: 100%;
+}
+
+
+/* <!-- This is Service section  -->  */
+
+.services{
+    background-color: rgb(43, 40, 40);
+  padding: 100px 0;
+}
+
+.service-intro-list {
+    width: 727px;
+    margin: auto;
+    color: #fff;
+}
+
+.service-intro-list p span{
+display: inline-block;
+text-transform: uppercase;
+font-size: 20px;
+}
+
+
+/* Service list section  */
+
+.service-list{
+    color: white;
+}
+
+.service-item {
+    background: white;
+    color: black;
+    padding: 43px 35px;
+    border-radius: 23px;
+    box-shadow: rgb(158 83 83 / 28%) 0px 0px 16px 10px;
+    transition: .5s;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.item-1::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #95a5a6;
+    border-radius: 23px;
+    z-index: -1;
+    transition: .5s;
+    transform: rotate(45deg);
+    
+}
+
+.item-1:hover::before{
+height: 100%;
+transform: rotate(0);
+
+}
+
+
+
+.item-2::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #95a5a6;
+    border-radius: 23px;
+    z-index: -1;
+    transition: .5s;
+   
+    
+}
+
+
+.item-2:hover::before{
+    height: 100%;
+ }
+
+
+ .item-3::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: #95a5a6;
+    border-radius: 23px;
+    z-index: -1;
+    transition: .5s;
+   
+    
+}
+
+
+.item-3:hover::before{
+    width: 100%;
+ }
+
+
+
+
+
+.service-item i {
+    font-size: 36px;
+    height: 180px;
+    float: left;
+    margin-right: 12px;
+    color: rgb(0, 255, 140);
+    margin-top: 7px;
+
+}
+.service-item h3 {
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+
+/* <!-- This is work-Details section  -->  */
+
+.works-main{
+    background-color: rgb(86, 126, 45);
+    padding: 100px 0;
+}
+.works-main .work-titile {
+    width: 690px;
+    margin: auto;
+}
+
+
+.work-list{
+   
+    text-align: center;
+}
+
+.work-list .img-1{
+    padding: 0;
+    margin: 0;
+    border: 2px solid #ddd;
+}
+
+.work-list .img-1 img{
+    width: 100%;
+    height: 80%;
+    
+    
+}
+
+.work-list .img-2{
+    padding: 0;
+    margin: 0;
+    border: 2px solid #ddd;
+}
+
+.work-list .img-2 img {
+    width: 100%;
+    height: 80%;
+
+}
+
+.work-list h2 {
+    font-size: 25px;
+    margin-top: 11px;
+}
+.work-list h3{}
+
+
+
+.bottom-imgs{}
+
+.bottom-imgs .all-btm-img{
+    max-width: 100%;
+}
+
+/* <!-- This is intro section  -->  */
+
+.intro-div{
+    background-color: rgb(12, 95, 88);
+}
+
+.intro-header{}
+
+.for-hover {
+    display: inline-block;
+   
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.intro-header h1 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    letter-spacing: 7px;
+   
+}
+.intro-header h1::before {
+    content: "";
+    height: 3px;
+    width: 374px;
+    top: 64px;
+    left: 34px;
+    position: absolute;
+    background-color: white;
+    margin: auto;
+    
+}
+
+.intro-header .for-hover::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    top: 64px;
+    left: 34px;
+    position: absolute;
+    background-color:black;
+    margin: auto;
+    transition: .5s;
+  
+}
+
+.intro-header .for-hover:hover::after{
+    width: 374px;
+    cursor: pointer;
+}
+
+
+.intro-list{}
+.intro-list .all-intro {
+    text-align: center;
+    display: inline-block;
+    margin-left: 75px;
+}
+.intro-list .all-intro img{
+
+    max-width: 100%;
+
+    z-index: -1;
+}
+
+.faka-div{
+    position: relative;
+}
+
+.intro-list .all-intro .faka-div::before {
+    content: "Mr. Jhonson";
+    line-height: 324px;
+    color: rgb(79, 246, 246);
+    font-size: 40px;
+    font-weight: bold;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(47, 44, 44, 0.398);
+    z-index: 1;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.intro-list .all-intro .faka-div:hover::before{
+
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.intro-list .all-intro .icon-list {
+    margin-right: 59px;
+}
+.intro-list .all-intro .icon-list ul{
+   
+}
+.intro-list .all-intro .icon-list ul li{
+    list-style: none;
+    display: inline-block;
+}
+.intro-list .all-intro .icon-list ul li a {
+    display: block;
+    color: #fff;
+    font-size: 56px;
+    margin-left: 16px;
+    transition: .5s;
+}
+
+.intro-list .all-intro .icon-list ul li a:hover{
+    color: #95a5a6;
+}
+
+
+
+/* <!-- This is offer section -->  */
+
+.offer-div{
+    padding: 100px 0;
+    background-color: #7f8c8d;
+}
+
+.offer-div .offer {
+    width: 900px;
+    margin: auto;
+}
+.offer-div .offer h1{
+    font-size: 60px;
+}
+.offer-div .offer a {
+    padding: 12px 30px;
+    font-size: 23px;
+}
+.offer-div .offer p {
+    font-size: 23px;
+}
+
+/* <!-- This is footer section  -->  */
+.footer{
+    background-color: #2c3e50;
+    color: #fff;
+    
+}
+
+.footer h2{
+    font-size: 15px;
+}
+
+.service-list{
+    margin-top: 70px;
+}
